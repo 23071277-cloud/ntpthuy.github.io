@@ -1,0 +1,42 @@
+h {
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: underline;
+    width: 500px;
+}
+.menu div {
+    width: 150px;
+    height: 20px;
+    background: -webkit-linear-gradient(top, #333, #999, #000) repeat-x;
+    background: -o-linear-gradient(top, #333, #999, #000) repeat-x;
+    background: -ms-linear-gradient(top, #333, #999, #000) repeat-x;
+    background: -moz-linear-gradient(top, #333, #999, #000) repeat-x;
+    color: #cebebe;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    text-transform: capitalize;
+}
+
+.menu ul {
+    list-style: inside url('bullet.png');
+    box-shadow: 5px 5px 10px #000;
+    border: 1px solid #000;
+    width: 148px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu li {
+    padding: 5px;
+    width: 138px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.menu li:hover {
+    background-color: rgb(231, 39, 110);
+    font-weight: bold;
+    color: rgb(118, 221, 158);
+}
