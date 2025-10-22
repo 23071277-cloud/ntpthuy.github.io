@@ -1,0 +1,15 @@
+/* Đặt chiều rộng cố định cho khối div */
+    div {
+      width: 400px;
+      padding: 8px;
+    }
+
+    /* Chọn các phần tử div có thứ tự chẵn (2, 4, 6, …) */
+    div:nth-child(even) {
+      background: #f9f9f9; 
+    }
+
+    /* Chọn các phần tử div có thứ tự lẻ (1, 3, 5, …) */
+    div:nth-child(2n + 1) {
+      background: rgb(238, 255, 153); 
+    }
