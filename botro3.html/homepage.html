@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fastbite - Fast Food Brand</title>
+  <link rel="stylesheet" href="homepage.css" />
+  <script src="homepage.js"></script>
+</head>
+<body>
+
+  <header class="header">
+    <h1>Fastbite</h1>
+    <p>Let's Choose Your Favorite Fast Food </p>
+  </header>
+
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <button id="cartBtn" class="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</button>
+  </nav>
+
+  <div class="hero">
+    <div class="hero-text">Delicious & Fast</div>
+  </div>
+
+  <!-- Search Bar -->
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search for food..." />
+  </div>
+
+  <!-- Category Filter -->
+  <div class="category-container">
+    <button class="category-btn" data-category="all">All</button>
+    <button class="category-btn" data-category="burger">Burgers</button>
+    <button class="category-btn" data-category="chicken">Chicken</button>
+    <button class="category-btn" data-category="sides">Sides</button>
+    <button class="category-btn" data-category="drinks">Drinks</button>
+  </div>
+
+  <section class="menu" id="menu">
+    <h2>Our Best Sellers</h2>
+
+    <div class="items" id="food-list">
+
+      <!-- BURGERS -->
+      <div class="item" data-category="burger">
+        <img src="https://thespiceway.com/cdn/shop/files/Signature_Savory_Classic_Burger.jpg?v=1712161801" />
+        <h3>Classic Burger</h3>
+        <p>Juicy beef with cheese.</p>
+        <span class="price">$5.99</span>
+        <button class="add-cart" data-name="Classic Burger" data-price="5.99">Add to Cart</button>
+      </div>
+
+      <div class="item" data-category="burger">
+        <img src="https://taste.co.za/wp-content/uploads/2018/08/Double-beef-burger.png" />
+        <h3>Double Beef Burger</h3>
+        <p>2x meat, 2x cheese.</p>
+        <span class="price">$7.49</span>
+        <button class="add-cart" data-name="Double Beef Burger" data-price="7.49">Add to Cart</button>
+      </div>
+
+      <!-- CHICKEN -->
+      <div class="item" data-category="chicken">
+        <img src="https://www.sugarandsoul.co/wp-content/uploads/2021/09/buttermilk-chicken-1-2.jpg" />
+        <h3>Fried Chicken</h3>
+        <p>Crispy & juicy.</p>
+        <span class="price">$6.99</span>
+        <button class="add-cart" data-name="Fried Chicken" data-price="6.99">Add to Cart</button>
+      </div>
+
+      <!-- SIDES -->
+      <div class="item" data-category="sides">
+        <img src="https://smokinandgrillinwitab.com/wp-content/uploads/2025/02/iStock-2188707691-scaled.jpg" />
+        <h3>Onion Rings</h3>
+        <p>Crispy golden rings.</p>
+        <span class="price">$3.49</span>
+        <button class="add-cart" data-name="Onion Rings" data-price="3.49">Add to Cart</button>
+      </div>
+
+      <div class="item" data-category="sides">
+        <img src="https://www.foodleclub.com/wp-content/uploads/2021/11/crispy-french-fries_1.jpg" />
+        <h3>Crispy Fries</h3>
+        <p>Golden perfection.</p>
+        <span class="price">$2.99</span>
+        <button class="add-cart" data-name="Crispy Fries" data-price="2.99">Add to Cart</button>
+      </div>
+
+      <!-- DRINKS -->
+      <div class="item" data-category="drinks">
+        <img src="https://www.sharmispassions.com/wp-content/uploads/2012/07/chocolate-milkshake1.jpg" />
+        <h3>Chocolate Milkshake</h3>
+        <p>Thick and sweet.</p>
+        <span class="price">$4.49</span>
+        <button class="add-cart" data-name="Milkshake" data-price="4.49">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Cart Popup -->
+  <div id="cart-popup" class="cart-popup hidden">
+    <div class="cart-content">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <h3>Total: $<span id="total-price">0.00</span></h3>
+      <button id="closeCart" class="close-btn">Close</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Fastbite. All Rights Reserved.</p>
+  </footer>
+
+  <script src="homepage.js"></script>
+</body>
+</html>
